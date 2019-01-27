@@ -12,11 +12,6 @@ app.get('/', function(req, res){
   res.send('<h1>AppCoda - SocketChat Server</h1>');
 });
 
-http.listen(server_port, server_ip_address, function(){
-  console.log( "Listening on " + server_ip_address + ", port " + server_port )
-});
-
-
 io.on('connection', function(clientSocket){
   console.log('a user connected');
 
@@ -100,3 +95,9 @@ io.on('connection', function(clientSocket){
   });
 
 });
+
+http.listen(server_port, server_ip_address, function(){
+  console.log( "Listening on " + server_ip_address + ", port " + server_port )
+});
+
+module.exports = app ;
