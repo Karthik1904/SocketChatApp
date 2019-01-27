@@ -5,13 +5,15 @@ var io = require('socket.io')(http);
 var userList = [];
 var typingUsers = {};
 
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+
 app.get('/', function(req, res){
   res.send('<h1>AppCoda - SocketChat Server</h1>');
 });
 
-
-http.listen(3100, function(){
-  console.log('Listening on *:3100');
+http.listen(server_port, server_ip_address, function(){
+  console.log( "Listening on " + server_ip_address + ", port " + server_port )
 });
 
 
