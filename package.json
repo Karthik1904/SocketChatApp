@@ -11,10 +11,6 @@
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Karthik1904/SocketChatApp.git"
   }
 }
 
