@@ -1,15 +1,20 @@
 {
-  "name": "srv-socketchat",
+  "name": "SocketChatApp",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
-  "author": "",
+  "author": "Karthik1904",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Karthik1904/SocketChatApp.git"
+  },
 }
+
